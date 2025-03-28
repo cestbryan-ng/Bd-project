@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="archorpane1" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxtest.tp_poo.MainFrmApplicationinsert">
+   <children>
+      <Pane fx:id="pane1" layoutX="667.0" prefHeight="550.0" prefWidth="228.0">
+         <children>
+            <Button fx:id="button_inserer" contentDisplay="RIGHT" layoutX="-23.0" layoutY="255.0" mnemonicParsing="false" onAction="#Inserer" text="Inserer">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/fleche-droite.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="32.0" layoutY="483.0" mnemonicParsing="false" onAction="#Retour">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/annuler.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane prefHeight="90.0" prefWidth="670.0">
+         <children>
+            <Button layoutX="86.0" layoutY="21.0" mnemonicParsing="false" onAction="#Etudiant">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/etudiant-diplome.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="269.0" layoutY="21.0" mnemonicParsing="false" onAction="#Enseignant">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/apprendre.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="462.0" layoutY="23.0" mnemonicParsing="false" onAction="#Agent">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/agent-immobilier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="90.0" layoutY="69.0" text="Etudiant" />
+            <Label layoutX="266.0" layoutY="69.0" text="Enseignant" />
+            <Label layoutX="472.0" layoutY="69.0" text="Agent" />
+         </children>
+      </Pane>
+      <VBox layoutY="120.0" prefHeight="272.0" prefWidth="670.0">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="670.0">
+               <children>
+                  <Label text="Code">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="code" disable="true" promptText="Entrer votre code...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Nom">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nom" disable="true" promptText="Entrer votre nom...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Date">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="date" disable="true" promptText="Entrer votre date de naissance...">
+                     <HBox.margin>
+                        <Insets top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="670.0">
+               <children>
+                  <Label text="Adresse">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="adresse" disable="true" promptText="Entrer votre adresse...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Email">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="email" disable="true" promptText="Entrer votre email...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="telNumber">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="telnumber" disable="true" promptText="Entrer votre numero de telephone...">
+                     <HBox.margin>
+                        <Insets top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="670.0">
+               <children>
+                  <Label text="Salaire">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="salaire" disable="true" promptText="Entrer votre adresse...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Statut">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="statut" disable="true" promptText="Entrer votre statut...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Categorie">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="categorie" disable="true" promptText="Entrer votre categorie...">
+                     <HBox.margin>
+                        <Insets top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="670.0">
+               <children>
+                  <Label text="Indice de salaire">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="indice_de_salaire" disable="true" promptText="Entrer votre indice de salaire...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Occupation">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="occupation" disable="true" promptText="Entrer votre occupationl...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="670.0">
+               <children>
+                  <Label text="Cycle">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="cycle" disable="true" promptText="Entrer votre cycle...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Niveau">
+                     <HBox.margin>
+                        <Insets right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="niveau" disable="true" promptText="Entrer votre niveau...">
+                     <HBox.margin>
+                        <Insets right="30.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="message_erreur" layoutX="313.0" layoutY="385.0" textFill="RED" />
+      <Label fx:id="label1" layoutX="203.0" layoutY="408.0" text="Insérer vos contacts dans notre bd" />
+      <Label fx:id="label1" layoutX="82.0" layoutY="494.0" text="Revenir en arrière" />
+   </children>
+</AnchorPane>

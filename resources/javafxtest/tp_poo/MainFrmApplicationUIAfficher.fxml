@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane1" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxtest.tp_poo.MainFrmApplicationafficher">
+   <children>
+      <TableView fx:id="tableview" layoutX="37.0" layoutY="63.0" prefHeight="425.0" prefWidth="720.0">
+        <columns>
+          <TableColumn fx:id="colonne_code" prefWidth="60.0" text="code" />
+          <TableColumn fx:id="colonne_nom" prefWidth="60.0" text="nom" />
+            <TableColumn fx:id="colonne_date" prefWidth="60.0" text="date de naissance" />
+            <TableColumn fx:id="colonne_adresse" prefWidth="60.0" text="adresse" />
+            <TableColumn fx:id="colonne_email" prefWidth="60.0" text="email" />
+            <TableColumn fx:id="colonne_tel" prefWidth="60.0" text="telNumber" />
+            <TableColumn fx:id="colonne_cycle" prefWidth="60.0" text="cycle" />
+            <TableColumn fx:id="colonne_statut" prefWidth="60.0" text="statut" />
+            <TableColumn fx:id="colonne_salaire" prefWidth="60.0" text="salaire" />
+            <TableColumn fx:id="colonne_categorie" prefWidth="60.0" text="categorie" />
+            <TableColumn fx:id="colonne_indice" prefWidth="60.0" text="Indice de salaire" />
+            <TableColumn fx:id="colonne_occupation" prefWidth="60.0" text="occupation" />
+        </columns>
+      </TableView>
+      <Pane fx:id="pane1" layoutX="767.0" prefHeight="550.0" prefWidth="61.0" />
+      <Label fx:id="label1" layoutX="234.0" layoutY="34.0" text="Liste des contacts (Agent, Etudiant, Enseignant)" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_retour" layoutX="37.0" layoutY="500.0" mnemonicParsing="false" onAction="#Retour" prefHeight="42.0" prefWidth="49.0">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/annuler.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="label1" layoutX="86.0" layoutY="511.0" text="Revenir en arrière" />
+   </children>
+</AnchorPane>

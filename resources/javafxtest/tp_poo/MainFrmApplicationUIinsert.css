@@ -1,0 +1,49 @@
+#anchorpane1 {
+    -fx-background-color : #eaeaea;
+}
+
+#pane1 {
+    -fx-background-color : #d4c2aa;
+}
+
+.button {
+    -fx-background-color : transparent;
+    -fx-cursor : hand;
+}
+
+.button:hover {
+    -fx-scale-x : 0.95;
+    -fx-scale-y : 0.95;
+}
+
+.button:pressed {
+    -fx-scale-x : 1.05;
+    -fx-scale-y : 1.05;
+}
+
+#button_inserer {
+    -fx-background-color : black;
+    -fx-text-fill : white;
+    -fx-font-size : 15;
+    -fx-font-weigth : bold;
+    -fx-font-family : "Cambria Math";
+    -fx-background-radius : 0;
+    -fx-cursor : hand;
+}
+
+.label {
+    -fx-text-fill : black;
+    -fx-font-family : "Cambria Math";
+    -fx-font-weigth : bold;
+    -fx-font-size : 13;
+}
+
+#label1 {
+    -fx-font-size : 18;
+}
+
+.text-field {
+    -fx-text-fill : black;
+    -fx-font-family : "Cambria Math";
+    -fx-background-radius : 0;
+}
